@@ -86,6 +86,52 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="feeds-item">
+                <div class="feeds-header">
+                    <div class="feeds-header-img">
+                        <img src="https://www.indiewire.com/wp-content/uploads/2022/01/AP21190389554952-e1643225561835.jpg" alt="">
+                    </div>
+                    
+                    <div class="feeds-header-title">
+                        <p>Fakta dan mitos</p>
+                        <p>Audio asli</p>
+                    </div>
+                    
+                    <div class="feeds-header-rightmenu">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+                <div class="feeds-video">
+                    <video controls :src="video"></video>
+                </div>
+                <div class="feeds-footer">
+                    <div class="feeds-footer-act px-2">
+                        <div class="act-item">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="act-item">
+                            <i class="fa fa-comment-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="act-item">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="act-item">
+                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="feeds-footer-content px-2">
+                        <p class="feeds-like">8,789 suka</p>
+                        <p class="feeds-desc">infia_fact jaringan internet di jawa timur mengalami down ....</p>
+                        <p class="feeds-comment">
+                            <router-link :to="{ name: 'comment' }" replace>Lihat semua komentar</router-link>
+                        </p>
+                        <p class="feeds-date">17 jam yang lalu</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -103,7 +149,7 @@
                 <i class="fa fa fa-paper-plane-o" aria-hidden="true"></i>
             </div>
             <div class="footer-item">
-                <i class="fa fa fa fa-user-circle-o" aria-hidden="true"></i>
+                <router-link :to="{ name: 'login' }" replace><i class="fa fa fa fa-user-circle-o" aria-hidden="true"></i></router-link>
             </div>
         </div>
     </div>

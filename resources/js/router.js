@@ -4,6 +4,8 @@ import VueRouter from 'vue-router';
 import Home from './pages/Home.vue';
 import About from './pages/About.vue';
 import Comment from './pages/Comments.vue';
+import Register from './pages/Register.vue';
+import Login from './pages/Login.vue';
 
 Vue.use(VueRouter);
 
@@ -25,6 +27,16 @@ const router = new VueRouter({
             path: '/comment',
             name: 'comment',
             component: Comment
+        },
+        {
+            path: '/register',
+            name: 'register',
+            component: Register
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: Login
         },
     ]
 });

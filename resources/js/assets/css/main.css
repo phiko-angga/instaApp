@@ -253,7 +253,7 @@ body {
 
 .comments-list{
     height: 100%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     padding: 7px;
     position: relative;
 }
@@ -299,4 +299,8 @@ body {
 .comments-title-button{
     margin-left: auto;
     cursor: pointer;
+}
+
+.login-wrapper{
+    background-color:rgb(0, 0, 0, .06);
 }
